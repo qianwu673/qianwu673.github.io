@@ -1,236 +1,52 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qian Wu | Personal Homepage</title>
-  <style>
-    :root {
-      --bg: #fafafa;
-      --text: #222;
-      --muted: #666;
-      --line: #ddd;
-      --accent: #1f4e79;
-      --max-width: 960px;
-    }
+<main class="container">
+  <section class="hero" id="about">
+    <img class="avatar" src="assets/profile.jpg" alt="Qian Wu profile photo" />
 
-    * { box-sizing: border-box; }
+    <div>
+      <h1>Qian Wu</h1>
 
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
+      <div class="subtitle">
+        Associate Professor, Ph.D.<br>
+        <a href="https://www.hosei.ac.jp/media/" target="_blank" rel="noopener noreferrer">
+          Research Center for Computing and Multimedia Studies
+        </a>,
+        <a href="https://www.hosei.ac.jp/" target="_blank" rel="noopener noreferrer">
+          Hosei University
+        </a>
+      </div>
 
-    .container {
-      width: min(92%, var(--max-width));
-      margin: 0 auto;
-    }
+      <div class="intro">
+        <p>
+          I work in the field of Operations Research, with a particular focus on network optimization.
+          My current academic interests have expanded toward the ethical use and governance of large language models,
+          as well as the broader impact of AI on higher education. Beyond my formal research areas, I am also deeply
+          interested in philosophy and consider myself a beginner exploring its questions and methods.
+        </p>
+      </div>
 
-    header {
-      border-bottom: 1px solid var(--line);
-      background: white;
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .site-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    main {
-      padding: 48px 0 64px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 36px;
-      align-items: start;
-    }
-
-    .avatar {
-      width: 220px;
-      height: 220px;
-      border-radius: 6px;
-      object-fit: cover;
-      background: #e9e9e9;
-      border: 1px solid var(--line);
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 1.05rem;
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .intro {
-      margin-bottom: 20px;
-    }
-
-    .link-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px 18px;
-      padding: 0;
-      margin: 20px 0 0;
-      list-style: none;
-    }
-
-    .link-list a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .section {
-      margin-top: 56px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
-    }
-
-    .section h2 {
-      margin: 0 0 18px;
-      font-size: 1.35rem;
-    }
-
-    .card-list {
-      display: grid;
-      gap: 16px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px 20px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 22px 0 40px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 760px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .avatar {
-        width: 180px;
-        height: 180px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container topbar">
-      <a class="site-title" href="#">Qian Wu</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <ul class="link-list">
+        <li><a href="https://scholar.google.com/citations?user=MwjItTcAAAAJ&hl=ja" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="https://researchmap.jp/qianwu" target="_blank" rel="noopener noreferrer">ResearchMap</a></li>
+        <li><a href="https://github.com/qianwu673" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:qian.wu.87@hosei.ac.jp?subject=Inquiry">Email</a></li>
+        <li><a href="https://orcid.org/0000-0002-0558-2500" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+      </ul>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section class="hero" id="about">
-      <img class="avatar" src="https://via.placeholder.com/220x220.png?text=Photo" alt="Profile photo" />
-  
-      <div>
-        <h1>Qian Wu</h1>
-  
-        <div class="subtitle">
-          Associate Professor, Ph.D.<br>
-          <a href="https://www.hosei.ac.jp/media/" target="_blank" rel="noopener noreferrer">
-            Research Center for Computing and Multimedia Studies
-          </a>,
-          <a href="https://www.hosei.ac.jp/" target="_blank" rel="noopener noreferrer">
-            Hosei University
-          </a>
-        </div>
-  
-        <div class="intro">
-          <p>
-            I work in the field of Operations Research, with a particular focus on network optimization.
-            My current academic interests have expanded toward the ethical use and governance of large language models,
-            as well as the broader impact of AI on higher education. Beyond my formal research areas, I am also deeply
-            interested in philosophy and consider myself a beginner exploring its questions and methods.
-          </p>
-        </div>
-  
-        <ul class="link-list">
-          <li><a href="https://scholar.google.com/citations?user=MwjItTcAAAAJ&hl=ja" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-          <li><a href="https://researchmap.jp/qianwu" target="_blank" rel="noopener noreferrer">ResearchMap</a></li>
-          <li><a href="https://github.com/qianwu673" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="mailto:qian.wu.87@hosei.ac.jp?subject=Inquiry">Email</a></li>
-          <li><a href="https://orcid.org/0000-0002-0558-2500" target="_blank" rel="noopener noreferrer">ORCID</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-    <section class="section" id="teaching">
-      <h2>Teaching</h2>
-      <div class="card-list">
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </section>
-
-    <section class="section" id="publications">
-      <h2>Selected Publications</h2>
-      <div class="card-list">
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      © 2026 Qian Wu. Built with GitHub Pages.
+  <section class="section" id="teaching">
+    <h2>Teaching</h2>
+    <div class="card-list">
+      <div class="card"></div>
+      <div class="card"></div>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+
+  <section class="section" id="publications">
+    <h2>Selected Publications</h2>
+    <div class="card-list">
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </section>
+</main>
