@@ -1,84 +1,148 @@
-<main class="container">
-  <section 
-    class="hero" 
-    id="about"
-    style="display: grid; grid-template-columns: 160px 1fr; gap: 32px; align-items: start;"
-  >
-    <img 
-      class="avatar" 
-      src="assets/profile.jpg" 
-      alt="Qian Wu profile photo"
-      style="width: 160px; height: 160px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd;"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qian Wu | Personal Homepage</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
 
-    <div>
-      <h1>Qian Wu</h1>
+  <header>
+    <div class="container topbar">
+      <a class="site-title" href="index.html">Qian Wu</a>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a class="" href="en/notes.html">Essays & Notes</a>
+        <a href="index.html#teaching">Teaching</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <span class="lang-switch">
+          <a class="active" href="index.html">EN</a> /
+          <a class="" href="zh/index.html">中文</a> /
+          <a class="" href="ja/index.html">日本語</a>
+        </span>
+      </nav>
+    </div>
+  </header>
 
-      <div class="subtitle">
-        Associate Professor, Ph.D.<br>
-        <a href="https://www.hosei.ac.jp/media/" target="_blank" rel="noopener noreferrer">
-          Research Center for Computing and Multimedia Studies
-        </a>,
-        <a href="https://www.hosei.ac.jp/" target="_blank" rel="noopener noreferrer">
-          Hosei University
-        </a>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <img class="avatar" src="assets/profile.jpg" onerror="this.src='assets/profile-placeholder.svg'" alt="Qian Wu profile photo" />
+
+      <div>
+        <h1>Qian Wu</h1>
+
+        <div class="subtitle">
+          Associate Professor, Ph.D.<br>
+          <a href="https://www.hosei.ac.jp/media/" target="_blank" rel="noopener noreferrer">
+            Research Center for Computing and Multimedia Studies
+          </a>,
+          <a href="https://www.hosei.ac.jp/" target="_blank" rel="noopener noreferrer">
+            Hosei University
+          </a>
+        </div>
+
+        <div class="intro">
+          <p>
+            I work in the field of Operations Research, with a particular focus on network optimization.
+            My current academic interests have expanded toward the ethical use and governance of large language models,
+            as well as the broader impact of AI on higher education. I am also interested in philosophy,
+            especially where philosophical questions intersect with technology, education, and human agency.
+          </p>
+        </div>
+
+        <ul class="link-list">
+          <li><a href="https://scholar.google.com/citations?user=MwjItTcAAAAJ&hl=ja" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://researchmap.jp/qianwu" target="_blank" rel="noopener noreferrer">ResearchMap</a></li>
+          <li><a href="https://github.com/qianwu673" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:qian.wu.87@hosei.ac.jp?subject=Inquiry">Email</a></li>
+          <li><a href="https://orcid.org/0000-0002-0558-2500" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+        </ul>
       </div>
+    </section>
 
-      <div class="intro">
-        <p>
-          I work in the field of Operations Research, with a particular focus on network optimization.
-          My current academic interests have expanded toward the ethical use and governance of large language models,
-          as well as the broader impact of AI on higher education. Beyond my formal research areas, I am also deeply
-          interested in philosophy and consider myself a beginner exploring its questions and methods.
-        </p>
+    <section class="section" id="notes">
+      <h2>Essays & Notes</h2>
+      <p class="section-lead">
+        A multilingual space for essays, research notes, reflections, and working thoughts.
+      </p>
+      <div class="card-list">
+        <div class="card">
+          <h3><a href="en/notes.html">English Notes</a></h3>
+          <p>Academic essays, research notes, and reflections in English.</p>
+        </div>
+        <div class="card">
+          <h3><a href="zh/notes.html">中文随笔与札记</a></h3>
+          <p>关于 AI、教育、哲学、研究与日常生活的中文思考。</p>
+        </div>
+        <div class="card">
+          <h3><a href="ja/notes.html">日本語エッセイ・ノート</a></h3>
+          <p>研究、教育、AI、社会についての日本語メモ。</p>
+        </div>
       </div>
+    </section>
 
-      <ul 
-        class="link-list"
-        style="display: flex; flex-wrap: wrap; gap: 12px 18px; padding: 0; margin: 20px 0 0; list-style: none;"
-      >
-        <li>
-          <a href="https://scholar.google.com/citations?user=MwjItTcAAAAJ&hl=ja" target="_blank" rel="noopener noreferrer">
-            Google Scholar
-          </a>
-        </li>
-        <li>
-          <a href="https://researchmap.jp/qianwu" target="_blank" rel="noopener noreferrer">
-            ResearchMap
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/qianwu673" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="mailto:qian.wu.87@hosei.ac.jp?subject=Inquiry">
-            Email
-          </a>
-        </li>
-        <li>
-          <a href="https://orcid.org/0000-0002-0558-2500" target="_blank" rel="noopener noreferrer">
-            ORCID
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section class="section" id="teaching">
+      <h2>Teaching</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Courses</h3>
+          <p>Course information will be added here.</p>
+        </div>
+        <div class="card">
+          <h3>Seminars and Supervision</h3>
+          <p>Information about seminars, student supervision, and research guidance will be added here.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="section" id="teaching">
-    <h2>Teaching</h2>
-    <div class="card-list">
-      <div class="card"></div>
-      <div class="card"></div>
-    </div>
-  </section>
+    <section class="section" id="publications">
+      <h2>Selected Publications</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Selected paper title</h3>
+          <p class="meta">Author list. Journal or conference, year.</p>
+          <p>A short description or link can be added here.</p>
+        </div>
+        <div class="card">
+          <h3>Selected paper title</h3>
+          <p class="meta">Author list. Journal or conference, year.</p>
+          <p>A short description or link can be added here.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="section" id="publications">
-    <h2>Selected Publications</h2>
-    <div class="card-list">
-      <div class="card"></div>
-      <div class="card"></div>
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>Network Optimization</h3>
+          <p>Research projects related to operations research and network optimization.</p>
+        </div>
+        <div class="card">
+          <h3>AI, Education, and Governance</h3>
+          <p>Exploratory work on large language models, higher education, and responsible AI use.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:qian.wu.87@hosei.ac.jp?subject=Inquiry">qian.wu.87@hosei.ac.jp</a>
+      </p>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <div class="container">
+      © 2026 Qian Wu. Built with GitHub Pages.
     </div>
-  </section>
-</main>
+  </footer>
+</body>
+</html>

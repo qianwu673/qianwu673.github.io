@@ -1,0 +1,2 @@
+Put your profile photo here and name it profile.jpg.
+The pages will try to load assets/profile.jpg first, and use profile-placeholder.svg if it is not found.
